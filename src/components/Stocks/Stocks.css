@@ -1,0 +1,8 @@
+.stocks {
+  background-color: white;
+}
+@media (max-width: 480px) {
+  .stocks {
+    height: 240px;
+  }
+}
