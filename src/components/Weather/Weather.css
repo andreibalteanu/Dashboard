@@ -1,7 +1,8 @@
 .weather {
   background-color: #ffb235;
 }
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
   .weather {
     height: 240px;
   }

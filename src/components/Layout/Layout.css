@@ -1,3 +1,29 @@
-.layout {
-  background-color: black;
+@media (min-width: 769px) {
+  .article,
+  .weather,
+  .stocks,
+  .subscribe {
+    height: 500px;
+  }
+  .horizontal-pair {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+  }
+  .horizontal-pair .widget-container {
+    width: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container > .widget-container {
+    width: 50%;
+  }
+  .vertical-pair {
+    width: 50%;
+  }
+  .vertical-pair .widget-container {
+    height: 50%;
+  }
 }

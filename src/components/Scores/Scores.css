@@ -1,7 +1,12 @@
 .scores {
   background-color: yellow;
 }
-@media (max-width: 480px) {
+@media (min-width: 769px) {
+  .scores {
+    height: 1000px;
+  }
+}
+@media (max-width: 768px) {
   .scores {
     height: 500px;
   }

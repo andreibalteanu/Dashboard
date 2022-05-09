@@ -4,7 +4,6 @@ import Navbar from "components/Navbar/Navbar";
 import Layout from "components/Layout/Layout";
 import Footer from "components/Footer/Footer";
 
-import "./Home.css";
 import profileImage from "images/Navbar/Avatar.png";
 
 function Home() {

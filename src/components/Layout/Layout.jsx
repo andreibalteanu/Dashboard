@@ -11,12 +11,28 @@ import "./Layout.css";
 function Layout() {
   return (
     <Flex direction="column" className="layout">
-      <Article />
-      <Weather />
+      <div className="horizontal-pair">
+        <div className="widget-container">
+          <Article />
+        </div>
+        <div className="widget-container">
+          <Weather />
+        </div>
+      </div>
       <Stocks />
-      <Subscribe />
-      <Article />
-      <Scores />
+      <div className="container">
+        <div className="vertical-pair">
+          <div className="widget-container">
+            <Subscribe />
+          </div>
+          <div className="widget-container">
+            <Article />
+          </div>
+        </div>
+        <div className="widget-container">
+          <Scores />
+        </div>
+      </div>
     </Flex>
   );
 }

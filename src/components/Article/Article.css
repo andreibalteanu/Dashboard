@@ -1,5 +1,8 @@
+.article {
+  background-color: blue;
+}
 @media (max-width: 768px) {
   .article {
-    display: none;
+    height: 240px;
   }
 }
