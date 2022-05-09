@@ -1,0 +1,12 @@
+.navbarmenu {
+  width: 33%;
+}
+.navbar-menu-title {
+  margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu-title {
+    display: none;
+  }
+}

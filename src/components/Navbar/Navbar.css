@@ -1,11 +1,41 @@
+.navbar {
+  background-color: #f96332;
+  color: white;
+}
+
+.navbarlogo {
+  width: 33%;
+}
+
+.widgets-title {
+  display: none;
+}
+
+.navbar-top {
+  align-items: center;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  font-size: small;
+}
+
+@media (max-width: 768px) {
+  .navbar-top {
+    height: 65px;
+    padding: 0 15px 0 15px;
+  }
+}
 @media (max-width: 480px) {
   .navbar-top {
     height: 50px;
-    padding: 10px;
-    background-color: #f96332;
+    padding: 0 10px 10px 10px;
+    justify-content: space-between;
+    align-items: flex-end;
   }
+
   .widgets-title {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: x-large;
     height: 90px;
     background-color: #e25d30;

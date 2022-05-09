@@ -5,6 +5,7 @@ import Layout from "components/Layout/Layout";
 import Footer from "components/Footer/Footer";
 
 import "./Home.css";
+import profileImage from "images/Navbar/Avatar.png";
 
 function Home() {
   // const data = {
@@ -31,7 +32,7 @@ function Home() {
   // };
   return (
     <Flex direction="column" className="home">
-      <Navbar />
+      <Navbar profileImageSrc={profileImage} />
       <Layout />
       <Footer />
     </Flex>

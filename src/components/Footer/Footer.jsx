@@ -5,7 +5,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <Flex direction="row" justify="space-between" className="footer">
+    <Flex
+      direction="row"
+      justify="space-between"
+      align="center"
+      className="footer"
+    >
       <div>ArrowLeft</div>
       <div>Numbers</div>
       <div>ArrowRight</div>

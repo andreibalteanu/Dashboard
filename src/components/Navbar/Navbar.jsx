@@ -1,27 +1,23 @@
 import { Flex, Image } from "@chakra-ui/react";
 import React from "react";
 
-import "./Navbar.css";
-import menuIcon from "../../images/Navbar/Icon-Menu.svg";
-import addIcon from "../../images/Navbar/Icon-Add.svg";
-import Logo from "../../images/Navbar/Logo.png";
+import NavbarMenu from "components/NavbarMenu/NavbarMenu";
 
-function Navbar() {
+import NavbarPlus from "components/NavbarPlus/NavbarPlus";
+import "./Navbar.css";
+import Logo from "../../images/Navbar/Logo.svg";
+
+function Navbar({ profileImageSrc }) {
   return (
     <Flex direction="column" className="navbar">
-      <Flex
-        direction="row"
-        justify="space-between"
-        align="flex-end"
-        className="navbar-top"
-      >
-        <Image src={menuIcon} height="20" alt="menu" />
-        <Image src={Logo} height="20" alt="logo" />
-        <Image src={addIcon} height="20" alt="add" />
+      <Flex direction="row" className="navbar-top">
+        <NavbarMenu />
+        <Flex justify="center" className="navbarlogo">
+          <Image src={Logo} height="20" alt="logo" />
+        </Flex>
+        <NavbarPlus profileImageSrc={profileImageSrc} />
       </Flex>
-      <Flex justify="center" align="center" className="widgets-title">
-        WIDGETS
-      </Flex>
+      <div className="widgets-title">WIDGETS</div>
     </Flex>
   );
 }
