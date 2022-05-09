@@ -1,9 +1,10 @@
+import { Flex } from "@chakra-ui/react";
 import React from "react";
 
 import "./Article.css";
 
 function Article() {
-  return <div className="article">Article</div>;
+  return <Flex className="article">Article</Flex>;
 }
 
 export default Article;

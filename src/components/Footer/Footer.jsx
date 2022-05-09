@@ -1,4 +1,4 @@
-import { Flex, Image } from "@chakra-ui/react";
+import { Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 import "./Footer.css";
@@ -12,11 +12,11 @@ function Footer() {
         <Image src={arrowLeft} height="15" alt="menu" className="arrow-left" />
       </Flex>
       <div className="number-of-pages">
-        <div className="page-number page-selected">1</div>
-        <div className="page-number">2</div>
-        <div className="page-number">3</div>
-        <div className="page-number">4</div>
-        <div className="page-number">5</div>
+        <Text className="page-number page-selected">1</Text>
+        <Text className="page-number">2</Text>
+        <Text className="page-number">3</Text>
+        <Text className="page-number">4</Text>
+        <Text className="page-number">5</Text>
       </div>
       <Flex justify="flex-end" className="rightside-footer">
         <Image

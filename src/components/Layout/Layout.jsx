@@ -9,6 +9,24 @@ import React from "react";
 import "./Layout.css";
 
 function Layout() {
+  // const articleData = {
+  //   firstArticle: {
+  //     title: "Astronauts could land on Red Planet by 2039",
+  //     articleExtras: {
+  //       source: "space.com",
+  //       timeAgo: "20m",
+  //       topic: "science",
+  //     },
+  //   },
+  //   secondArticle: {
+  //     title: "Arctic sea ice extent hits record low for winter maximum",
+  //     articleExtras: {
+  //       source: "CNN",
+  //       timeAgo: "1h",
+  //       topic: "environment",
+  //     },
+  //   },
+  // };
   return (
     <Flex direction="column" className="layout">
       <div className="horizontal-pair">
