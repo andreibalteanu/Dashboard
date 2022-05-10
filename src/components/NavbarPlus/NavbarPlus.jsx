@@ -1,4 +1,3 @@
-import { Flex, Image } from "@chakra-ui/react";
 import React from "react";
 
 import "./NavbarPlus.css";
@@ -6,29 +5,21 @@ import addIcon from "../../images/Navbar/Icon-Add.svg";
 import searchIcon from "../../images/Navbar/Icon-Search.svg";
 import bookmark from "../../images/Navbar/Icon-Bookmark.svg";
 
-function NavbarPlus({ profileImageSrc }) {
+function NavbarPlus({ profileImageSrc, toggleDrawer }) {
   return (
-    <Flex justify="flex-end" className="navbarplus">
-      <Image src={addIcon} height="20" alt="add" className="add-icon" />
-      <Image
-        src={searchIcon}
-        height="20"
-        alt="search"
-        className="search-icon"
-      />
-      <Image
-        src={profileImageSrc}
-        height="20"
-        alt="avatar"
-        className="avatar"
-      />
-      <Image
+    <div className="navbarplus">
+      <img src={addIcon} alt="add" className="add-icon" />
+      <img src={searchIcon} alt="search" className="navbar-icon search-icon" />
+      <img src={profileImageSrc} alt="avatar" className="navbar-icon avatar" />
+      <img
         src={bookmark}
-        height="20"
+        onClick={() => {
+          toggleDrawer();
+        }}
         alt="avatar"
-        className="bookmark-icon"
+        className="navbar-icon bookmark-icon"
       />
-    </Flex>
+    </div>
   );
 }
 

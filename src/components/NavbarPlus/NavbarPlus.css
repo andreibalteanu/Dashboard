@@ -1,12 +1,17 @@
 .navbarplus {
+  display: flex;
+  justify-content: flex-end;
   width: 33%;
 }
 
+.navbar-icon,
 .add-icon,
 .search-icon,
 .avatar,
 .bookmark-icon {
+  height: 20px;
   margin: 0 0 0 25px;
+  cursor: pointer;
 }
 
 .avatar {

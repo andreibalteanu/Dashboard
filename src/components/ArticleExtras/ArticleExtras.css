@@ -1,13 +1,30 @@
 .articleextras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: "Montserrat";
-  font-size: small;
+  font-size: x-small;
   font-weight: lighter;
 }
+.article-info {
+  display: flex;
+  justify-content: space-between;
+}
 .article-source {
+  display: flex;
+  align-items: center;
   margin-right: 20px;
 }
 .article-icon {
   margin-right: 5px;
+}
+.source-icon,
+.time-icon {
+  height: 13px;
+}
+.article-publish-time {
+  display: flex;
+  align-items: center;
 }
 .article-topic {
   text-decoration: underline;

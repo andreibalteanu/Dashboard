@@ -1,4 +1,3 @@
-import { Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
 import "./Footer.css";
@@ -7,26 +6,21 @@ import arrowRight from "../../images/Footer/Icon-Right.svg";
 
 function Footer() {
   return (
-    <Flex direction="row" align="center" className="footer">
-      <Flex className="leftside-footer">
-        <Image src={arrowLeft} height="15" alt="menu" className="arrow-left" />
-      </Flex>
-      <div className="number-of-pages">
-        <Text className="page-number page-selected">1</Text>
-        <Text className="page-number">2</Text>
-        <Text className="page-number">3</Text>
-        <Text className="page-number">4</Text>
-        <Text className="page-number">5</Text>
+    <div className="footer">
+      <div className="leftside-footer">
+        <img src={arrowLeft} alt="menu" className="arrow-left" />
       </div>
-      <Flex justify="flex-end" className="rightside-footer">
-        <Image
-          src={arrowRight}
-          height="15"
-          alt="menu"
-          className="arrow-right"
-        />
-      </Flex>
-    </Flex>
+      <div className="number-of-pages">
+        <p className="page-number page-selected">1</p>
+        <p className="page-number">2</p>
+        <p className="page-number">3</p>
+        <p className="page-number">4</p>
+        <p className="page-number">5</p>
+      </div>
+      <div className="rightside-footer">
+        <img src={arrowRight} alt="menu" className="arrow-right" />
+      </div>
+    </div>
   );
 }
 

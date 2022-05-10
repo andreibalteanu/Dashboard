@@ -1,5 +1,9 @@
 .navbarmenu {
+  display: flex;
   width: 33%;
+}
+.icon-menu {
+  height: 20px;
 }
 .navbar-menu-title {
   margin-left: 15%;

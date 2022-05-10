@@ -1,11 +1,23 @@
 .subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../images/Subscribe/Background.png");
   background-size: cover;
   color: white;
 }
 .subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 70%;
   height: 60%;
+}
+.top-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .subscribe-title {
   font-size: 50px;
@@ -16,6 +28,10 @@
   font-family: "Montserrat";
   font-size: small;
   font-weight: lighter;
+}
+.bottom-subscribe {
+  display: flex;
+  flex-direction: column;
 }
 .email-input {
   border-radius: 20px;

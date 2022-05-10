@@ -1,7 +1,15 @@
 .weather {
-  background-color: #ffb235;
+  background-color: #ffb236;
+  color: white;
 }
-
+.top-weather {
+  display: flex;
+  flex-direction: row;
+}
+.hours {
+  display: flex;
+  flex-direction: row;
+}
 @media (max-width: 768px) {
   .weather {
     height: 240px;

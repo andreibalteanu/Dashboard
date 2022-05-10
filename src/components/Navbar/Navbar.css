@@ -1,10 +1,23 @@
 .navbar {
+  display: flex;
+  flex-direction: column;
   background-color: #f96332;
   color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 .navbarlogo {
+  display: flex;
+  justify-content: center;
   width: 33%;
+}
+
+.icon-logo {
+  height: 20px;
 }
 
 .widgets-title {
@@ -12,19 +25,33 @@
 }
 
 .navbar-top {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   height: 60px;
   padding: 0 20px 0 20px;
   font-size: small;
 }
 
+body {
+  padding-top: 60px;
+}
+
 @media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+
   .navbar-top {
     height: 65px;
     padding: 0 15px 0 15px;
   }
 }
 @media (max-width: 480px) {
+  body {
+    padding-top: 140px;
+  }
+
   .navbar-top {
     height: 50px;
     padding: 0 10px 10px 10px;

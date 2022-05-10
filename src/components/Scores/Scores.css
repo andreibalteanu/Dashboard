@@ -1,5 +1,5 @@
 .scores {
-  background-color: yellow;
+  background-color: rgb(123, 195, 123);
 }
 @media (min-width: 769px) {
   .scores {
