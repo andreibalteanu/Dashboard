@@ -7,31 +7,35 @@ import Weather from "components/Weather/Weather";
 import React from "react";
 
 import "./Layout.css";
+// import articleOneBackground from "../../images/Article/Clip.png";
+// import articleTwoBackground from "../../images/Article/960x0.jpeg";
 
 function Layout() {
-  // const articleData = {
-  //   firstArticle: {
-  //     title: "Astronauts could land on Red Planet by 2039",
-  //     articleExtras: {
-  //       source: "space.com",
-  //       timeAgo: "20m",
-  //       topic: "science",
-  //     },
-  //   },
-  //   secondArticle: {
-  //     title: "Arctic sea ice extent hits record low for winter maximum",
-  //     articleExtras: {
-  //       source: "CNN",
-  //       timeAgo: "1h",
-  //       topic: "environment",
-  //     },
-  //   },
-  // };
+  const articlesData = {
+    firstArticle: {
+      title: "Astronauts could land on Red Planet by 2039",
+      backgroundImage: "articleOneBackground.png",
+      articleExtras: {
+        source: "space.com",
+        publishTimeAgo: "20m",
+        topic: "science",
+      },
+    },
+    secondArticle: {
+      title: "Arctic sea ice extent hits record low for winter maximum",
+      backgroundImage: "articleTwoBackground.jpeg",
+      articleExtras: {
+        source: "CNN",
+        publishTimeAgo: "1h",
+        topic: "environment",
+      },
+    },
+  };
   return (
     <Flex direction="column" className="layout">
       <div className="horizontal-pair">
         <div className="widget-container">
-          <Article />
+          <Article articleData={articlesData.firstArticle} />
         </div>
         <div className="widget-container">
           <Weather />
@@ -44,7 +48,7 @@ function Layout() {
             <Subscribe />
           </div>
           <div className="widget-container">
-            <Article />
+            <Article articleData={articlesData.secondArticle} />
           </div>
         </div>
         <div className="widget-container">

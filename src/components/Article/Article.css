@@ -1,8 +1,25 @@
 .article {
   background-color: blue;
+  color: white;
+}
+.article-title {
+  font-size: xx-large;
+  margin: 0 0 10px 0;
+}
+.article-container {
+  width: 85%;
+  height: 30%;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .article {
     height: 240px;
+  }
+  .article-container {
+    margin-bottom: 30px;
+  }
+  .article-title {
+    font-size: large;
+    margin: 0 0 10px 0;
   }
 }

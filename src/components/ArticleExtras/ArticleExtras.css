@@ -1,0 +1,21 @@
+.articleextras {
+  font-family: "Montserrat";
+  font-size: small;
+  font-weight: lighter;
+}
+.article-source {
+  margin-right: 20px;
+}
+.article-icon {
+  margin-right: 5px;
+}
+.article-topic {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+@media (max-width: 768px) {
+  .articleextras {
+    font-size: xx-small;
+    font-weight: lighter;
+  }
+}
