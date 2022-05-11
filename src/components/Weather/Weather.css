@@ -10,8 +10,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 80%;
-  margin-top: 30px;
+  width: 90%;
+  margin-top: 40px;
 }
 .hours {
   display: flex;

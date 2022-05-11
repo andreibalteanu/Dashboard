@@ -17,8 +17,6 @@ function Weather() {
   }
 
   const list = data.list.slice(0, 8);
-  // eslint-disable-next-line no-console
-  console.log(list);
   const today = list[0];
   const tomorrow = list[4];
   const week = list[7];

@@ -152,7 +152,7 @@ function Home() {
     <div className="home">
       <Navbar profileImageSrc={profileImage} toggleDrawer={toggleDrawer} />
       <Layout data={data} />
-      {drawerIsOpen && <Drawer />}
+      {drawerIsOpen && <Drawer toggleDrawer={toggleDrawer} />}
       <Footer />
     </div>
   );
