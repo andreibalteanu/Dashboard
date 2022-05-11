@@ -1,17 +1,55 @@
 .weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ffb236;
   color: white;
 }
 .top-weather {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
 }
 .hours {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.temperature-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temperature-hour-top {
+  font-size: large;
+  margin: 0 0 5px 0;
+}
+.temperature-hour-bottom {
+  font-size: small;
+  color: rgb(238, 238, 238);
+  margin: 0px;
 }
 @media (max-width: 768px) {
   .weather {
     height: 240px;
+  }
+  .hours {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hours {
+    margin-bottom: 10px;
+  }
+  .temperature-hour-top {
+    font-size: medium;
+  }
+  .temperature-hour-bottom {
+    font-size: x-small;
   }
 }

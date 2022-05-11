@@ -1,36 +1,36 @@
 import React from "react";
 
+import "./WeatherIcon.css";
+import Clouds from "../../images/Weather/Clouds.jpeg";
+import Rainy from "../../images/Weather/Rainy.png";
+import Sunny from "../../images/Weather/Sunny.png";
+
 function WeatherIcon({ state, location }) {
   const states = {
     Clouds: {
       title: "Clouds",
-      icon: (
-        <img
-          src="https://icon-library.com/images/white-cloud-icon-png/white-cloud-icon-png-29.jpg"
-          alt="clouds"
-        />
-      ),
+      icon: <img className="weather-state" src={Clouds} alt="clouds" />,
     },
     Rainy: {
       title: "Rainy",
-      icon: <img src="" alt="" />,
+      icon: <img className="weather-state" src={Rainy} alt="rainy" />,
     },
     Sunny: {
       title: "Sunny",
-      icon: <img src="" alt="" />,
+      icon: <img className="weather-state" src={Sunny} alt="sunny" />,
     },
   };
 
   const current = states[state] || {
-    title: "Today's temperature",
-    icon: <img src="default-icon.png" alt="" />,
+    title: "Clouds",
+    icon: <img className="weather-state" src={Clouds} alt="clouds" />,
   };
 
   return (
-    <div>
+    <div className="weathericon">
       {current.icon}
-      <p>{current.title}</p>
-      <p>{location}</p>
+      <p className="weather-title">{current.title}</p>
+      <p className="weather-location">{location}</p>
     </div>
   );
 }

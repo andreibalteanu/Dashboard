@@ -1,0 +1,37 @@
+.weather-state {
+  width: 130px;
+}
+.weather-title,
+.weather-location {
+  margin: 5px 0 5px 0;
+}
+.weather-title {
+  font-size: xx-large;
+}
+.weather-location {
+  font-size: medium;
+  color: rgb(238, 238, 238);
+}
+@media (max-width: 768px) {
+  .weather-state {
+    width: 90px;
+  }
+  .weather-title {
+    font-size: large;
+  }
+  .weather-location {
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-state {
+    width: 60px;
+  }
+  .weather-title {
+    font-size: medium;
+  }
+  .weather-location {
+    font-size: x-small;
+  }
+}

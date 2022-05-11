@@ -25,8 +25,12 @@ function Weather() {
 
   const renderedHours = list.map((day) => (
     <div className="temperature-hour">
-      <h3>{new Date(day.dt_txt).getHours()}</h3>
-      <h6>{day.main.temp}</h6>
+      <p className="temperature-hour-top">
+        {day.main.temp.toString().slice(0, 3)}°
+      </p>
+      <p className="temperature-hour-bottom">
+        {new Date(day.dt_txt).getHours()}
+      </p>
     </div>
   ));
 
