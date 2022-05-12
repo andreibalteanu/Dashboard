@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./DrawerProfile.css";
 import upload from "../../images/Drawer/Icon-Upload.svg";
 import avatar from "../../images/Drawer/Avatar.png";
 import sync from "../../images/Drawer/Icon-Sync.svg";
@@ -9,6 +8,8 @@ import name from "../../images/Drawer/Icon-Name.svg";
 import email from "../../images/Drawer/Icon-Email.svg";
 import password from "../../images/Drawer/Icon-Password.svg";
 import dot from "../../images/Drawer/Dot.svg";
+
+import "./DrawerProfile.css";
 
 function DrawerProfile() {
   return (

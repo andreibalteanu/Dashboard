@@ -1,5 +1,6 @@
-import ArticleExtras from "components/ArticleExtras/ArticleExtras";
 import React from "react";
+
+import ArticleExtras from "components/ArticleExtras/ArticleExtras";
 
 import "./Article.css";
 

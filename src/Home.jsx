@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+
 import Navbar from "components/Navbar/Navbar";
 import Layout from "components/Layout/Layout";
 import Footer from "components/Footer/Footer";
 import Drawer from "components/Drawer/Drawer";
-
 import profileImage from "images/Navbar/Avatar.png";
-
 import articleOneBackground from "./images/Article/articleOneBackground.png";
 import articleTwoBackground from "./images/Article/articleTwoBackground.jpeg";
 
@@ -75,9 +74,9 @@ const data = {
         peratio: "25.83",
         change: "-3.85%",
       },
-      dow3: {
-        id: "dow3",
-        name: "DOW 3",
+      dowj: {
+        id: "dowj",
+        name: "DOW J",
         price: 403.53,
         low: 126.88,
         high: 127.61,

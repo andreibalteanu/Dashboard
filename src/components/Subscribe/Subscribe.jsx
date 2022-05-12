@@ -1,7 +1,8 @@
 /* eslint-disable react/no-children-prop */
+import React from "react";
+
 import { EmailIcon } from "@chakra-ui/icons";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import React from "react";
 
 import "./Subscribe.css";
 

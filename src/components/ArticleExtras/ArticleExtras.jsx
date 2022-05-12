@@ -1,8 +1,9 @@
 import React from "react";
 
-import "./ArticleExtras.css";
 import sourceIcon from "../../images/Article/Icon-Source.svg";
 import timeIcon from "../../images/Article/Icon-Time.svg";
+
+import "./ArticleExtras.css";
 
 function ArticleExtras({ articleExtraData }) {
   return (

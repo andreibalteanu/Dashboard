@@ -1,9 +1,10 @@
 import React from "react";
+
 import DrawerProfile from "components/DrawerProfile/DrawerProfile";
 import EmailNotifications from "components/EmailNotifications/EmailNotifications";
-
 import collapse from "../../images/Drawer/Icon-Collapse.svg";
 import logout from "../../images/Drawer/Icon-Logout.svg";
+
 import "./Drawer.css";
 
 function Drawer({ toggleDrawer }) {

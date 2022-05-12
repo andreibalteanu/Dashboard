@@ -1,9 +1,10 @@
 import React from "react";
 
-import "./WeatherIcon.css";
 import Clouds from "../../images/Weather/Clouds.jpeg";
 import Rainy from "../../images/Weather/Rainy.png";
 import Sunny from "../../images/Weather/Sunny.png";
+
+import "./WeatherIcon.css";
 
 function WeatherIcon({ state, location }) {
   const states = {

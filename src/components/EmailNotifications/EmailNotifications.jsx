@@ -1,5 +1,6 @@
-import EmailNotificationsDay from "components/EmailNotificationsDay/EmailNotificationsDay";
 import React from "react";
+
+import EmailNotificationsDay from "components/EmailNotificationsDay/EmailNotificationsDay";
 
 import "./EmailNotifications.css";
 

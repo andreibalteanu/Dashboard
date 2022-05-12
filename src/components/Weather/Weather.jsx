@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
-import useFetch from "hooks/useFetch";
 
-import "./Weather.css";
+import useFetch from "hooks/useFetch";
 import WeatherIcon from "components/WeatherIcon/WeatherIcon";
 import WeatherTabs from "components/WeatherTabs/WeatherTabs";
+
+import "./Weather.css";
 
 function Weather() {
   const { data, isPending } = useFetch(

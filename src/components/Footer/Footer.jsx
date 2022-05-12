@@ -1,8 +1,9 @@
 import React from "react";
 
-import "./Footer.css";
 import arrowLeft from "../../images/Footer/Icon-Left.svg";
 import arrowRight from "../../images/Footer/Icon-Right.svg";
+
+import "./Footer.css";
 
 function Footer() {
   return (

@@ -1,9 +1,10 @@
 import React from "react";
 
-import "./NavbarPlus.css";
 import addIcon from "../../images/Navbar/Icon-Add.svg";
 import searchIcon from "../../images/Navbar/Icon-Search.svg";
 import bookmark from "../../images/Navbar/Icon-Bookmark.svg";
+
+import "./NavbarPlus.css";
 
 function NavbarPlus({ profileImageSrc, toggleDrawer }) {
   return (

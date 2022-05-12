@@ -1,7 +1,8 @@
 import React from "react";
 
-import "./NavbarMenu.css";
 import menuIcon from "../../images/Navbar/Icon-Menu.svg";
+
+import "./NavbarMenu.css";
 
 function NavbarMenu() {
   return (

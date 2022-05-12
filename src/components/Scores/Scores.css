@@ -1,5 +1,60 @@
 .scores {
-  background-color: rgb(123, 195, 123);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.top-scores {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.title-scores {
+  text-align: center;
+}
+.icon-right,
+.icon-left {
+  width: 25px;
+}
+.title-scores-main {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+.title-scores-extra {
+  font-size: small;
+}
+.matches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.match {
+  display: flex;
+  align-items: center;
+}
+.team-score {
+  display: flex;
+  align-items: center;
+}
+.team-info {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.team-city {
+  margin-bottom: 0px;
+}
+.team-name {
+  margin-top: 0px;
+}
+.match-score {
+  font-size: xx-large;
+  margin: 0 30px 0 30px;
+}
+.match-colon {
+  font-size: xx-large;
 }
 @media (min-width: 769px) {
   .scores {

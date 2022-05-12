@@ -1,10 +1,10 @@
 import React from "react";
 
 import NavbarMenu from "components/NavbarMenu/NavbarMenu";
-
 import NavbarPlus from "components/NavbarPlus/NavbarPlus";
-import "./Navbar.css";
 import Logo from "../../images/Navbar/Logo.svg";
+
+import "./Navbar.css";
 
 function Navbar({ profileImageSrc, toggleDrawer }) {
   return (
