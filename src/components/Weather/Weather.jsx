@@ -9,7 +9,7 @@ import WeatherTabs from "components/WeatherTabs/WeatherTabs";
 import "./Weather.css";
 
 function Weather() {
-  const { data, isPending } = useFetch(
+  const { data } = useFetch(
     "http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=7bc2d24c7570b6b5317741bc0577ae6a"
   );
 
